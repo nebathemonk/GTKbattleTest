@@ -1,0 +1,17 @@
+[FlurryOfBlows]
+name=Flurry Of Blows
+targetGroup=enemies
+targets=single
+desc= A quick series of weak strikes with any weapon
+brand=offense
+method=melee
+damageType=physical
+staminaUse=15
+freeAction=false
+coolDown=0
+isWarm=false
+hitChance=70
+criticalRatio=5
+criticalDamage=1.5
+element=slashing
+function=attack,1,2,enemies;attack,1,2,enemies;attack,1,2,enemies

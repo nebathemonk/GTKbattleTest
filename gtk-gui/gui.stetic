@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/battle.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="battle.MainWindow" design-size="605 394">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.HPaned" id="hpaned1">
+        <property name="MemberName" />
+        <property name="CanFocus">True</property>
+        <property name="Position">338</property>
+        <child>
+          <widget class="Gtk.VPaned" id="vpaned1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Position">320</property>
+            <child>
+              <widget class="Gtk.Table" id="table1">
+                <property name="MemberName" />
+                <property name="NRows">3</property>
+                <property name="NColumns">2</property>
+                <property name="RowSpacing">9</property>
+                <property name="ColumnSpacing">2</property>
+                <property name="BorderWidth">3</property>
+                <child>
+                  <widget class="Gtk.Fixed" id="fixed10">
+                    <property name="MemberName" />
+                    <property name="HasWindow">False</property>
+                    <child>
+                      <widget class="Gtk.Label" id="PC3Name">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">27</property>
+                        <property name="Y">10</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="PC3HP">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">1</property>
+                        <property name="Y">30</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="PC3MP">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">2</property>
+                        <property name="Y">45</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="PC3Status">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">2</property>
+                        <property name="Y">61</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="TopAttach">2</property>
+                    <property name="BottomAttach">3</property>
+                    <property name="AutoSize">True</property>
+                    <property name="XOptions">Fill</property>
+                    <property name="YOptions">Fill</property>
+                    <property name="XExpand">False</property>
+                    <property name="XFill">True</property>
+                    <property name="XShrink">False</property>
+                    <property name="YExpand">False</property>
+                    <property name="YFill">True</property>
+                    <property name="YShrink">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Fixed" id="fixedNPC1">
+                    <property name="MemberName" />
+                    <property name="HasWindow">False</property>
+                    <child>
+                      <widget class="Gtk.Label" id="NPC1Name">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">3</property>
+                        <property name="Y">9</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="NPC1HP">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">26</property>
+                        <property name="Y">22</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="NPC1MP">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">26</property>
+                        <property name="Y">37</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="NPC1Status">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">25</property>
+                        <property name="Y">52</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="LeftAttach">1</property>
+                    <property name="RightAttach">2</property>
+                    <property name="AutoSize">True</property>
+                    <property name="XOptions">Fill</property>
+                    <property name="YOptions">Fill</property>
+                    <property name="XExpand">False</property>
+                    <property name="XFill">True</property>
+                    <property name="XShrink">False</property>
+                    <property name="YExpand">False</property>
+                    <property name="YFill">True</property>
+                    <property name="YShrink">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Fixed" id="fixedNPC2">
+                    <property name="MemberName" />
+                    <property name="HasWindow">False</property>
+                    <child>
+                      <widget class="Gtk.Label" id="NPC2Name">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">4</property>
+                        <property name="Y">23</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="NPC2HP">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">28</property>
+                        <property name="Y">37</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="NPC2MP">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">27</property>
+                        <property name="Y">50</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="NPC2Status">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">26</property>
+                        <property name="Y">65</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="TopAttach">1</property>
+                    <property name="BottomAttach">2</property>
+                    <property name="LeftAttach">1</property>
+                    <property name="RightAttach">2</property>
+                    <property name="AutoSize">True</property>
+                    <property name="XOptions">Fill</property>
+                    <property name="YOptions">Fill</property>
+                    <property name="XExpand">False</property>
+                    <property name="XFill">True</property>
+                    <property name="XShrink">False</property>
+                    <property name="YExpand">False</property>
+                    <property name="YFill">True</property>
+                    <property name="YShrink">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Fixed" id="fixedNPC3">
+                    <property name="MemberName" />
+                    <property name="HasWindow">False</property>
+                    <child>
+                      <widget class="Gtk.Label" id="NPC3Name">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="Y">9</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="NPC3HP">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">26</property>
+                        <property name="Y">26</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="NPC3MP">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">25</property>
+                        <property name="Y">41</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="NPC3Status">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">25</property>
+                        <property name="Y">55</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="TopAttach">2</property>
+                    <property name="BottomAttach">3</property>
+                    <property name="LeftAttach">1</property>
+                    <property name="RightAttach">2</property>
+                    <property name="AutoSize">True</property>
+                    <property name="XOptions">Fill</property>
+                    <property name="YOptions">Fill</property>
+                    <property name="XExpand">False</property>
+                    <property name="XFill">True</property>
+                    <property name="XShrink">False</property>
+                    <property name="YExpand">False</property>
+                    <property name="YFill">True</property>
+                    <property name="YShrink">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Fixed" id="fixedPC1">
+                    <property name="MemberName" />
+                    <property name="HasWindow">False</property>
+                    <child>
+                      <widget class="Gtk.Label" id="PC1Name">
+                        <property name="MemberName" />
+                        <property name="Xalign">0</property>
+                      </widget>
+                      <packing>
+                        <property name="X">24</property>
+                        <property name="Y">4</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="PC1HP">
+                        <property name="MemberName" />
+                        <property name="Xalign">0</property>
+                      </widget>
+                      <packing>
+                        <property name="X">4</property>
+                        <property name="Y">20</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="PC1MP">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">3</property>
+                        <property name="Y">32</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="PC1Status">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">3</property>
+                        <property name="Y">46</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="AutoSize">True</property>
+                    <property name="XOptions">Fill</property>
+                    <property name="YOptions">Fill</property>
+                    <property name="XExpand">False</property>
+                    <property name="XFill">True</property>
+                    <property name="XShrink">False</property>
+                    <property name="YExpand">False</property>
+                    <property name="YFill">True</property>
+                    <property name="YShrink">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Fixed" id="fixedPC2">
+                    <property name="MemberName" />
+                    <property name="HasWindow">False</property>
+                    <child>
+                      <widget class="Gtk.Label" id="PC2HP">
+                        <property name="MemberName" />
+                        <property name="Xalign">0</property>
+                      </widget>
+                      <packing>
+                        <property name="X">4</property>
+                        <property name="Y">24</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="PC2MP">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">4</property>
+                        <property name="Y">37</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="PC2Status">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">1</property>
+                        <property name="Y">50</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="PC2Name">
+                        <property name="MemberName" />
+                      </widget>
+                      <packing>
+                        <property name="X">18</property>
+                        <property name="Y">6</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="TopAttach">1</property>
+                    <property name="BottomAttach">2</property>
+                    <property name="AutoSize">True</property>
+                    <property name="XOptions">Fill</property>
+                    <property name="YOptions">Fill</property>
+                    <property name="XExpand">False</property>
+                    <property name="XFill">True</property>
+                    <property name="XShrink">False</property>
+                    <property name="YExpand">False</property>
+                    <property name="YFill">True</property>
+                    <property name="YShrink">False</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Resize">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed2">
+                <property name="MemberName" />
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Button" id="skillButton1">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Skill 1</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Released" handler="OnSkillButton1Released" />
+                  </widget>
+                  <packing>
+                    <property name="X">5</property>
+                    <property name="Y">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="skillButton2">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Skill 2</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Released" handler="OnSkillButton2Released" />
+                  </widget>
+                  <packing>
+                    <property name="X">5</property>
+                    <property name="Y">32</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="skillButton3">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Skill 3</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Released" handler="OnSkillButton3Released" />
+                  </widget>
+                  <packing>
+                    <property name="X">79</property>
+                    <property name="Y">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="skillButton4">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Skill 4</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Released" handler="OnSkillButton4Released" />
+                  </widget>
+                  <packing>
+                    <property name="X">79</property>
+                    <property name="Y">32</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Resize">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.VPaned" id="vpaned2">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Position">83</property>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed1">
+                <property name="MemberName" />
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Button" id="menuButton">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Start</property>
+                    <property name="UseUnderline">True</property>
+                  </widget>
+                  <packing>
+                    <property name="X">208</property>
+                    <property name="Y">51</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="partyButton">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Party</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Released" handler="PartySelect" />
+                  </widget>
+                  <packing>
+                    <property name="X">7</property>
+                    <property name="Y">6</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="roundCounter">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">label1</property>
+                  </widget>
+                  <packing>
+                    <property name="X">215</property>
+                    <property name="Y">5</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Resize">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+                <property name="MemberName" />
+                <property name="ShadowType">In</property>
+                <child>
+                  <widget class="Gtk.TextView" id="Text">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="ShowScrollbars">True</property>
+                    <property name="Editable">False</property>
+                    <property name="Text" translatable="yes" />
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Dialog" id="battle.targetting" design-size="212 132">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">Targetting</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="BorderWidth">9</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <property name="Buttons">2</property>
+    <property name="HelpButton">False</property>
+    <signal name="Close" handler="OnClose" />
+    <child internal-child="VBox">
+      <widget class="Gtk.VBox" id="dialog1_VBox">
+        <property name="MemberName" />
+        <property name="BorderWidth">2</property>
+        <child>
+          <widget class="Gtk.Fixed" id="fixed2">
+            <property name="MemberName" />
+            <property name="HasWindow">False</property>
+            <child>
+              <widget class="Gtk.CheckButton" id="checkbutton2">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes" />
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Toggled" handler="OnCheckbutton2Toggled" />
+              </widget>
+              <packing>
+                <property name="X">4</property>
+                <property name="Y">4</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="checkbutton3">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes" />
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Toggled" handler="OnCheckbutton3Toggled" />
+              </widget>
+              <packing>
+                <property name="X">4</property>
+                <property name="Y">23</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="checkbutton4">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes" />
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Toggled" handler="OnCheckbutton4Toggled" />
+              </widget>
+              <packing>
+                <property name="X">5</property>
+                <property name="Y">43</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+    <child internal-child="ActionArea">
+      <widget class="Gtk.HButtonBox" id="dialog1_ActionArea">
+        <property name="MemberName" />
+        <property name="Spacing">10</property>
+        <property name="BorderWidth">5</property>
+        <property name="Size">2</property>
+        <property name="LayoutStyle">End</property>
+        <child>
+          <widget class="Gtk.Button" id="buttonCancel">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-cancel</property>
+            <property name="ResponseId">-6</property>
+            <signal name="Released" handler="OnButtonCancelReleased" />
+            <property name="label">gtk-cancel</property>
+          </widget>
+          <packing>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="buttonOk">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-ok</property>
+            <property name="ResponseId">-5</property>
+            <signal name="Released" handler="OnButtonOkReleased" />
+            <property name="label">gtk-ok</property>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>

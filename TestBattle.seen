@@ -1,0 +1,6 @@
+[TestBattle]
+title=Test Battle: The Gobline Forest
+players=Bob
+wave1=Goblin,FatGoblin,Goblin
+wave2=Test
+background=forest

@@ -1,0 +1,17 @@
+[Fireball]
+name=Fireball
+targetGroup=enemies
+targets=single
+desc= Launch a large single fire ball at an enemy
+brand=offense
+method=ranged
+damageType=magic
+staminaUse=10
+freeAction=false
+coolDown=0
+isWarm=false
+hitChance=95
+criticalRatio=5
+criticalDamage=1.5
+element=fire
+function=attack,1,3,enemies;addStatus,Burn,1,40,enemies,false;

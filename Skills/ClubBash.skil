@@ -1,0 +1,17 @@
+[ClubBash]
+name=Club Bash
+targetGroup=enemies
+targets=single
+desc= A hard swing of whatever the user might have in their hand
+brand=offense
+method=melee
+damageType=physical
+staminaUse=10
+freeAction=false
+coolDown=0
+isWarm=false
+hitChance=90
+criticalRatio=10
+criticalDamage=1.5
+element=blunt
+function=attack,1,3,enemies;

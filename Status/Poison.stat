@@ -1,0 +1,10 @@
+[Poison]
+name=Poison
+activateChance=97
+activatesPerRound=1
+stack=1
+length=3
+step=turn
+type=Curse
+desc=Deals damage every turn
+function=harm,5,poison

@@ -1,0 +1,10 @@
+[Riposte]
+name=Riposte
+activateChance=60
+activatesPerRound=1
+stack=1
+length=2
+step=AfterAttack
+type=Intrinsic
+desc=Counter attack melee attacks
+function=counter,melee,melee

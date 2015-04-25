@@ -1,0 +1,10 @@
+[Burn]
+name=Burn
+activateChance=100
+activatesPerRound=0
+stack=1
+length=2
+step=turn
+type=Curse
+desc=Deals damage every turn
+function=harm,3,fire

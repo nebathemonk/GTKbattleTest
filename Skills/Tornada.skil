@@ -1,0 +1,17 @@
+[Tornada]
+name=Tornada
+targetGroup=enemies
+targets=all
+desc=Devastating wind storm is ablowin'!
+brand=offense
+method=ranged
+damageType=phsyical
+staminaUse=35
+freeAction=false
+coolDown=3
+isWarm=false
+hitChance=70
+criticalRatio=80
+criticalDamage=2
+element=wind
+function=attack,2,5,enemies;
