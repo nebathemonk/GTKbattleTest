@@ -1,0 +1,17 @@
+[Speed]
+name=Speed!
+targetGroup=self
+targets=single
+desc= Take an extra turn
+brand=support
+method=melee
+damageType=magic
+staminaUse=15
+freeAction=true
+coolDown=3
+isWarm=false
+hitChance=100
+criticalRatio=5
+criticalDamage=1.5
+element=none
+function=addTurn
