@@ -1,0 +1,10 @@
+[Paralysis]
+name=Paralysis
+activateChance=60
+activatesPerRound=0
+stack=1
+length=3
+step=BeforeAttack
+type=Curse
+desc=May cause character to skip turn
+function=skipTurn
